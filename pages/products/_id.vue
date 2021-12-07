@@ -43,7 +43,7 @@
       </p>
     </div>
   </div>
-  <div v-else class="container padding">Page not found 4 now</div>
+  <div v-else class="container padding"><PageNotFound /></div>
 </template>
 <script>
 export default {
@@ -51,7 +51,6 @@ export default {
     product() {
       const id = parseInt(this.$route.params.id)
       const getProductById = this.$store.getters.getProductById()
-      console.log(getProductById(id))
       return getProductById(id)
     },
   },
