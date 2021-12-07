@@ -2,7 +2,12 @@
   <div class="container">
     <h4 class="header">{{ title }}</h4>
     <div class="card-container">
-      <SmallCard v-for="{ id, image } in images" :key="id" :image="image" />
+      <SmallCard
+        v-for="{ id, image } in images"
+        :id="id"
+        :key="id"
+        :image="image"
+      />
     </div>
   </div>
 </template>

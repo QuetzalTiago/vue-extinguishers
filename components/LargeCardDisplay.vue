@@ -7,6 +7,7 @@
     <div class="cards-container">
       <LargeCard
         v-for="{ id, title, image, snippet } in cards"
+        :id="id"
         :key="id"
         :title="title"
         :image="image"

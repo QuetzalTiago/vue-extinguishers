@@ -1,15 +1,15 @@
 <template>
-  <div class="card">
+  <NuxtLink :to="`products/${id}`" class="card">
     <img :src="image" alt="" class="image" />
     <h3 class="header">{{ title }}</h3>
     <p class="snippet">{{ snippet }}</p>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['image', 'title', 'snippet'],
+  props: ['image', 'title', 'snippet', 'id'],
 }
 </script>
 
